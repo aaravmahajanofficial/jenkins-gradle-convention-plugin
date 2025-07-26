@@ -52,7 +52,7 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
-          ./gradlew clean build sonar --stacktrace --info
+          ./gradlew clean build sonar --stacktrace --info --debug
 
       - name: Publish to Maven Local
         run: |
